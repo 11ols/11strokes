@@ -43,7 +43,7 @@ int C74_EXPORT main(void)
 
 	class_register(CLASS_BOX, c); /* CLASS_NOBOX */
 	strokes_class = c;
-
+	object_post(NULL, "11strokes 2022/01/17 11OLSEN.DE");
 	return 0;
 }
 
@@ -821,7 +821,7 @@ void *strokes_new(t_symbol *s, long argc, t_atom *argv)
 	if (x = (t_strokes *)object_alloc(strokes_class)) 
 	{
        
-		object_post((t_object *)x, "11OLSEN.DE 2020/07/29");
+		;
 
 	}
 	return (x);

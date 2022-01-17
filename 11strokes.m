@@ -4,7 +4,7 @@
 
 #include "ext.h"
 #include "ext_obex.h"
-
+#import <Carbon/Carbon.h>
 
 ////////////////////////// object struct
 typedef struct _strokes
@@ -63,7 +63,7 @@ void ext_main(void *r)
     
     sourceRef = CGEventSourceCreate(kCGEventSourceStateCombinedSessionState);
     
-    
+    object_post(NULL, "11strokes 2022/01/17 11OLSEN.DE");
 }
 
 
@@ -1062,7 +1062,7 @@ void *strokes_new(t_symbol *s, long argc, t_atom *argv)
 
 	if ((x = (t_strokes *)object_alloc(strokes_class)))
     {
-        object_post((t_object *)x, "11OLSEN.DE 2020/07/29");
+        ;
         
 	}
     x->setModifier=0;
